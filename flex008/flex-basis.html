@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Basis</title>
+
+    <style>
+        #container{
+            height: 500px;
+            background-color: bisque;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+            
+            
+        }
+        .item{
+            background-color: azure;
+            border: 1px solid black;
+            flex-basis: 250px;
+            align-self: stretch;
+            text-align: center;
+        }
+        #i1{
+            align-self: stretch;
+        }
+        #i2{
+            align-self: stretch;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Teste de Flex-basis</h1>
+    <div id="container">
+        <div class="item" id="i1">1</div>
+        <div class="item" id="i2">cacetinho de morango</div>
+        <div class="item" id="i3">3</div>
+        
+     
+    </div>
+</body>
+</html>
