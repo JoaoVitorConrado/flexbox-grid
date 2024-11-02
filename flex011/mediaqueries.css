@@ -1,0 +1,53 @@
+@charset "UTF-8";     
+
+/*PARA CELULARES*/
+@media screen and (max-width: 600px){
+    #cabecalho{
+        height: 343px;
+    }
+    h1{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    #container-nav{
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        
+        height: 264px;
+        
+    }
+    #container-nav > .itens-nav{
+        border: 1px solid white;
+        box-shadow: none;
+        align-self: stretch;
+    }
+    #container-nav > .itens-nav:hover{
+        border: 1px solid black;
+        color: black;
+    }
+    
+}
+
+/*TELAS GRANDES*/
+@media screen and (min-width: 990px){
+    #cabecalho{
+        margin-bottom: 19px;
+    }
+    h1{
+        text-align: center;
+    }
+    #container-nav{
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: flex-end;
+        margin: 5px 0px;
+    }
+    #container-nav > .itens-nav{
+        margin: 0px 30px;
+    }
+    #container-section{
+        width: 70%;
+        margin: auto;
+    }
+}
