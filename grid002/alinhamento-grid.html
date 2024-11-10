@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento grid</title>
+    <style>
+        #pai{
+            display: grid;
+            background-color: lightcoral;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 200px);
+            grid-column-gap: 50px;
+            grid-row-gap: 50px;
+            align-items: end;
+            justify-items: stretch;
+        }
+        .item{
+            background-color: lightsalmon;
+            text-align: center;
+            
+        }
+        .item:nth-child(odd){
+            background-color: lightseagreen;
+        }
+        #um{
+            align-self: start;
+        }
+        #qua{
+            align-self: start;
+        }
+        #sete{
+            align-self: start;
+        }
+        #dois{
+            align-self: center;
+        }
+        #cinco{
+            align-self: stretch;
+            justify-self: start;
+        }
+        #oito{
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="pai">
+        <div class="item" id="um">1
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores molestias autem sed reiciendis ipsam nam error facere deserunt, consequuntur voluptatum laboriosam commodi provident ducimus mollitia cumque quibusdam vero consequatur recusandae.
+            </p>
+        </div>
+        <div class="item" id="dois">2
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero architecto cupiditate dolorem velit atque ea, perferendis nesciunt amet incidunt minima deserunt quae quisquam dolorum consequatur accusamus enim aliquid possimus? Saepe?</p>
+         
+        </div>
+        <div class="item">3
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum incidunt similique minus facilis tenetur temporibus at distinctio, excepturi eos, repellat inventore porro autem quibusdam molestias rerum repudiandae quia. Impedit, deserunt.</p>
+        </div>
+        <div class="item" id="qua">4
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime voluptatem perspiciatis in eligendi. Fugit, sed tenetur? Porro tempora error libero laudantium sunt pariatur fugiat, mollitia nobis recusandae amet nihil consectetur.</p>
+        </div>
+        <div class="item" id="cinco">5
+            
+        </div>
+        <div class="item">6
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores deleniti placeat, aut nesciunt dignissimos unde repellat eaque vitae quisquam officiis, libero dolorum, neque quam sunt? Quis quia vitae quod cumque.</p>
+        </div>
+        <div class="item" id="sete">7
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas accusantium facilis nulla omnis saepe magnam hic sunt impedit fuga? Ad sed laudantium voluptas porro laborum vitae, facilis sapiente ab libero.</p>
+        </div>
+        <div class="item" id="oito">8
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis laudantium iusto cum reprehenderit earum optio eaque quae ab explicabo voluptatum cupiditate dolore, ipsa architecto recusandae pariatur, quas obcaecati minus est.</p>
+        </div>
+        <div class="item">9
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aliquam voluptates recusandae ipsum labore sequi dicta aspernatur dolor quidem sunt iusto explicabo nulla, ipsa necessitatibus pariatur omnis alias obcaecati. Nemo!</p>
+        </div>
+    </div>
+</body>
+</html>
