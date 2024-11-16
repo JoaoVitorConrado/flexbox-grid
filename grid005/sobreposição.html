@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobreposição</title>
+    <style>
+        *{
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        #pai{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(5, minmax(200px, auto));
+        }
+        .filho{
+            border: 1px solid black;
+            background-color: lightyellow;
+            text-align: center;
+        }
+        #um{
+            grid-row-start: 1;
+            grid-row-end: 5;
+        }
+        #quatro{
+            grid-column: 4 / 5;
+            grid-row-start: 1;
+            grid-row-end: 5;
+        }
+        #meio:nth-child(4){
+            grid-row: 3 / 5;
+            grid-column: 2 / 4;
+        }
+        #cinco{
+            grid-column: 5 / -5;
+        }
+        #tres:nth-child(3){
+            background-color: aquamarine;
+            grid-row: 1 /3;
+        }
+        #dois{
+            grid-column: 2;
+            grid-row: 1 / 3;
+            background-color: azure;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="pai">
+        <div class="filho" id="um">1</div>
+        <div class="filho" id="dois">2</div>
+        <div class="filho" id="tres">3</div>
+        <div class="filho" id="meio">3.5</div>
+        <div class="filho" id="quatro">4</div>
+        <div class="filho" id="cinco">5</div>
+    </div>
+</body>
+</html>
