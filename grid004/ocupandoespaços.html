@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocupando espaços</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        #pai{
+            
+            background-color: white;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(5, minmax(200px, auto));
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+        }
+        .filho{
+            background-color: lightseagreen;
+            border: 1px solid black;
+            text-align: center;
+        }
+        #dez{
+            grid-row: 5;
+            grid-column: 1 / 5;
+        }
+        #meio{
+            grid-column: 3;
+            grid-row: 4;
+        }
+        #nove{
+            grid-column: 2;
+            grid-row: 4;
+        }
+        #sete{
+            grid-column: 3;
+            background-image: url(pexels-pixabay-220072.jpg);
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #seis{
+            grid-column: 2;
+        }
+        #um{
+            grid-row: 2 / 5;
+        }
+        #dois{
+            grid-column: 1 / -1;
+            
+        }
+       #quatro{
+        grid-column: 4;
+        grid-row: 2 / 5;
+        background-image: url(pexels-sean-whang-25006-804269\ \(1\).jpg);
+        background-position: center left;
+        background-size: cover;
+        background-repeat: no-repeat;
+       }
+       
+    </style>
+</head>
+<body>
+    <div id="pai">
+        <div class="filho" id="um">1</div>
+        <div class="filho" id="dois">2
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, sequi impedit, vero consectetur, ipsa quae explicabo natus quaerat veritatis tenetur nisi. Dolor molestias quibusdam ducimus assumenda consequuntur doloremque adipisci optio.
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, qui quisquam? Deserunt quasi, harum nostrum porro totam sequi laudantium voluptates facilis aliquid accusamus delectus, accusantium provident asperiores at eius quas.</p>
+                
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ex reiciendis nemo blanditiis? Temporibus adipisci accusamus nihil vitae quibusdam nesciunt fugit, ea, deserunt voluptatem in, odit accusantium ipsam nisi ducimus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia consequuntur deserunt labore blanditiis tempore saepe sequi, possimus nisi animi omnis? Accusamus totam sit asperiores delectus quibusdam nobis ullam aut nam.</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ratione, placeat voluptatum sed deleniti autem magni quibusdam libero sequi iure tempora, dolorum sapiente esse corporis laudantium? Quaerat voluptatem magnam saepe?
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum eius voluptatibus sunt, esse, quis ullam iure asperiores aliquid consectetur optio fuga blanditiis. Obcaecati architecto adipisci atque dolores vitae inventore commodi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, dolorem! Soluta ratione ea qui similique quo, voluptate iusto tempore? Atque, aperiam unde asperiores cum ut autem voluptate consequatur earum accusantium?</p>
+        </div>
+        
+        <div class="filho" id="quatro">4</div>
+        
+        <div class="filho" id="seis">6</div>
+        <div class="filho" id="sete">7</div>
+        <div class="filho" id="oito">8</div>
+        <div class="filho">8.5</div>
+        <div class="filho" id="nove">9</div>
+        <div class="filho" id="meio">9.5</div>
+        <div class="filho" id="dez">10</div>
+    </div>
+    
+</body>
+</html>
