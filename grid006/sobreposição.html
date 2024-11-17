@@ -39,34 +39,79 @@
 
 
         #pai{
+            
             margin-top: 150px;
-            background-color: violet;
+            background-image: url(background002.jpg);
+            background-position: right bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             grid-auto-rows: 200px;
         }
         #pai > .filho{
-            border: 1px solid black;
+            
         }
         #um{
             background-color: turquoise;
             grid-row: 1 / 3;
             grid-column: 1 / 3;
+            background-color: transparent;
         }
         #dois{
             background-color: brown;
             grid-column: 2 / 4;
             grid-row: 2 / 4;
+            background-color: transparent;
         }
         #tres{
             background-color: burlywood;
             grid-column: 3 / 5;
             grid-row: 3 / 5;
+            background-color: transparent;
         }
         #quatro{
             background-color: cadetblue;
             grid-column: 4 / 6;
             grid-row: 4 / 6;
+            background-color: transparent;
+        }
+
+
+        #terceiro{
+            margin-top: 50px;
+            background-color: lightpink;
+            display: grid;
+            grid-template-columns: repeat(4, minmax(auto, 600px));
+            grid-auto-rows: 200px;
+        }
+        .parente{
+           
+        }
+        #one{
+            background-color: lightskyblue;
+            grid-row: 1 / 3;
+            grid-column: 1 / 3;
+            z-index: 2;
+        }
+        #two{
+            background-color: lightgoldenrodyellow;
+            grid-row: 2 / 4;
+            grid-column: 2 / 4;
+            z-index: 1;
+        }
+        #three{
+            background-color: lightgreen;
+            grid-column: 3 / 5;
+            grid-row: 3 / 5;
+            z-index: 2;
+        }
+        #four{
+            background-color: turquoise;
+            grid-row: 3 / 5;
+            grid-column: 1 / 3;
+            
         }
     </style>
 </head>
@@ -80,10 +125,17 @@
 
 
     <div id="pai">
-        <div class="filho" id="um">1</div>
-        <div class="filho" id="dois">2</div>
-        <div class="filho" id="tres">3</div>
-        <div class="filho" id="quatro">4</div>
+        <div class="filho" id="um"></div>
+        <div class="filho" id="dois"></div>
+        <div class="filho" id="tres"></div>
+        <div class="filho" id="quatro"></div>
+    </div>
+
+    <div id="terceiro">
+        <div class="parente" id="one">1</div>
+        <div class="parente" id="two">2</div>
+        <div class="parente" id="three">3</div>
+        <div class="parente" id="four">4</div>
     </div>
 </body>
 </html>
