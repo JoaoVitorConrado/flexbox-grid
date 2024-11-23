@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout 02</title>
+    <style>
+        *{
+            margin: 0px; 
+        }
+        #pai{
+            display: grid;
+            grid-gap: 5px;
+            grid-template-columns: repeat(16, 1fr);
+            grid-auto-rows: 200px;
+            
+            
+        }
+        .item{
+            text-align: center;
+            
+            font-weight: bold;
+        }
+        header{
+            background-color: lightblue;
+            grid-column: 1 / 17;
+        }
+        main{
+            background-color: lightcoral;
+            grid-column: 3 / 15;
+            grid-row: 2 / 4;
+        }
+        section{
+            background-color: rgb(236, 127, 87);
+        }
+        #umsection{
+            grid-column: 3 / 5;
+        }
+        #doissection{
+            grid-column: 5 / 7;
+        }
+        #tressection{
+            grid-column: 7 / 9;
+        }
+        #quasection{
+            grid-column: 9 / 11;
+        }
+        #cincosection{
+            grid-column: 11 / 13;
+        }
+        #seissection{
+            grid-column: 13 / 15;
+        }
+        #content{
+            background-color: royalblue;
+            grid-column: 3 / 15;
+            grid-row: 5 / 6;
+        }
+        #periferico{
+            background-color: goldenrod;
+            grid-column: 1 / 15;
+        }
+        footer{
+            background-color: lightblue;
+            grid-column: 1 / 17;
+        }
+    </style>
+</head>
+<body>
+    <div id="pai">
+        
+        <header class="item">CABEÇALHO</header>
+        <main class="item">HERO</main>
+        <section id="umsection" class="item">SUB</section>
+        <section id="doissection" class="item">SUB</section>
+        <section id="tressection" class="item">SUB</section>
+        <section id="quasection" class="item">SUB</section>
+        <section id="cincosection" class="item">SUB</section>
+        <section id="seissection" class="item">SUB</section>
+        <aside class="item" id="content">CONTENT</aside>
+        <aside class="item" id="periferico">ASIDE</aside>
+        <footer class="item">FOOTER</footer>
+
+    </div>
+</body>
+</html>

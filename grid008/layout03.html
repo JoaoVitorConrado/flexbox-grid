@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/mediaqueries.css">
+    <title>layout 03</title>
+    <style>
+        *{
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        #pai{
+            display: grid;
+            grid-template-rows: repeat(6 , 200px);
+            grid-row-gap: 3px;
+        }
+        #titulo{
+            background-color: rgb(39, 179, 179);
+        }
+        #meta{
+            background-color: gray;
+        }
+        #copyone{
+            background-color: royalblue;
+        }
+        #copytwo{
+            background-color: brown;
+        }
+        #media{
+            background-color: yellow;
+        }
+        #aside{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div id="pai">
+        <div id="titulo" class="item">titulo</div>
+        <div id="meta" class="item">meta</div>
+        <div id="copyone" class="item">copy1</div>
+        <div id="copytwo" class="item">copy2</div>
+        <div id="media" class="item">media</div>
+        <div id="aside" class="item">aside</div>
+    </div>
+</body>
+</html>
